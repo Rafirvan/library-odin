@@ -1,0 +1,122 @@
+body{
+    margin: 0%;
+   
+}
+
+
+:root{
+    --color-1:#aaa9a4;
+    --color-2:#618685;
+    --color-3:#4040a1;
+    --color-4:#36486b;
+}
+
+
+
+#header{
+    height:100px;
+    background-color: var(--color-2);
+    display:grid;
+    grid-template-rows: 1fr 7% 7% 7%;
+    
+}
+
+.col{
+    height:100%;
+    font-size: 100px;
+    color: white;
+    border: black 1px solid;
+}
+
+.title{
+    height:79px;
+    font-size: 20px;
+    color: white;
+    border: black 1px solid;
+    text-align: center;
+}
+
+.col1{
+    background-color: var(--color-1);
+}
+
+.col2{
+    background-color: var(--color-3);
+}
+
+.col3{
+    background-color: var(--color-4);
+}
+
+#main{
+    height: 660px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    position: relative;
+    top:4px;
+}
+
+.control{
+    background-color: aquamarine;
+    padding-left: 20px;
+    position: -webkit-sticky;
+}
+
+.new-entry{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:85%;
+    row-gap: 10px;
+}
+
+.align-left{
+    justify-self: left;
+    aspect-ratio: 1;
+}
+
+.new-entry input{
+border-radius: 5px;
+}
+
+.control button{
+    grid-column: 1/3;
+    height:30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.clear{
+    margin-top: 50px;
+    width: 85%;
+}
+
+.clear:hover{
+    background-color: orangered;
+}
+
+.add:hover{
+    background-color: greenyellow;
+}
+
+
+.books{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+.bookcard{
+    height: 200px;
+    width:100%;
+    border-radius: 10px;
+    background-color: var(--color-1);
+    border: black 2px solid;
+    display: grid;
+    grid-template-columns: 48% 48%; 
+    grid-template-rows: 19% 19% 19% 19%;
+    padding: 10px;
+    font-size:20px ;
+    align-items: center;
+}
